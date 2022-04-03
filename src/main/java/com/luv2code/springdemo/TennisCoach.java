@@ -2,9 +2,11 @@ package com.luv2code.springdemo;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component
+@Scope("prototype")
 // -> this is the bean id | if we don't specify bean id, class name with lower case first letter will be taken by spring
 public class TennisCoach implements Coach {
 
