@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import javax.servlet.http.HttpServletRequest;
 
 @Controller
+@RequestMapping("/hello")
 public class HelloWorldController {
 
     /**
@@ -58,6 +59,7 @@ public class HelloWorldController {
     /**
      * A controller method to read form data and add data to the model
      * RequestParam will automatically assign theName value to the variable
+     *
      * @param theName
      * @param model
      * @return
